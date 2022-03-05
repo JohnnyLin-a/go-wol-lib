@@ -24,7 +24,7 @@ func Wake(macAddr string, broadcastIP string) error {
 		offset += 6
 	}
 
-	conn, err := net.Dial("udp", broadcastIP+":9")
+	conn, err := net.Dial("udp", broadcastIP)
 	if err != nil {
 		return err
 	}
